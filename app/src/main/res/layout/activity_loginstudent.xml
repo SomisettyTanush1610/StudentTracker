@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    tools:context=".loginstudent"
+    android:paddingTop="20dp">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/rectangle">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/animation_view"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        app:lottie_fileName="13568-animated-loader.json"
+                        app:lottie_loop="true"
+                        app:lottie_autoPlay="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:text="Student Login"
+                        android:textColor="#090505"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/relativelayot"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="280dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="#00FFFFFF"
+                            android:padding="2dp">
+
+
+                            <TextView
+                                android:id="@+id/textView5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Student ID"
+                                android:textColor="#2E2E2E"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.136"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.161" />
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Password"
+                                android:textColor="#2E2E2E"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.137"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <EditText
+                                android:id="@+id/adminEditText"
+                                android:layout_width="307dp"
+                                android:layout_height="52dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginBottom="172dp"
+                                android:background="@drawable/inputs"
+                                android:drawableLeft="@drawable/ic_person_black_24dp"
+                                android:drawablePadding="10dp"
+                                android:fontFamily="@font/comfortaa"
+                                android:hint="Enter Student ID"
+                                android:importantForAutofill="no"
+                                android:inputType="text"
+                                android:padding="10dp"
+                                android:textColor="#252529"
+                                android:textColorHint="#AEAEAE"
+                                android:textSize="15sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.517"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <Button
+                                android:id="@+id/login"
+                                android:layout_width="306dp"
+                                android:layout_height="52dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/button1"
+                                android:fontFamily="@font/open_sans_semibold"
+                                android:text="Login"
+                                android:textAllCaps="false"
+                                android:textColor="#FFFFFF"
+                                android:textSize="20sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="1.0" />
+
+                            <EditText
+                                android:id="@+id/adminPasswordEditText"
+                                android:layout_width="309dp"
+                                android:layout_height="52dp"
+                                android:layout_below="@id/adminEditText"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/inputs"
+                                android:drawableLeft="@drawable/ic_lock"
+                                android:drawablePadding="10dp"
+                                android:fontFamily="@font/comfortaa"
+                                android:hint="Enter Password"
+                                android:inputType="textPassword"
+                                android:padding="10dp"
+                                android:textColor="#252529"
+                                android:textColorHint="#AEAEAE"
+                                android:textSize="15sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.53"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.689" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <CheckBox
+                    android:id="@+id/cbRememberme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/login"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="-26dp"
+                    android:layout_marginEnd="328dp"
+                    android:background="@drawable/button2"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:text="Remember me   "
+                    android:textColor="#fff"
+                    android:visibility="invisible"></CheckBox>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
